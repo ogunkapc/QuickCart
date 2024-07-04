@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:quickcart/theme/dark_mode.dart';
+import 'package:quickcart/theme/light_mode.dart';
+
+import 'theme_test.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,10 +15,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'QuickCart',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
+      theme: lightTheme,
+      darkTheme: darkMode,
+      debugShowCheckedModeBanner: false,
       home: const MyHomePage(),
     );
   }
@@ -30,10 +33,6 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text("QuickCart"),
-      ),
-    );
+    return const ThemeTest();
   }
 }
