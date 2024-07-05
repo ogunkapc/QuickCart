@@ -2,72 +2,50 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:quickcart/constants/color_constants.dart';
 
-ThemeData lightTheme = ThemeData(
+ThemeData lightMode = ThemeData(
   brightness: Brightness.light,
   colorScheme: const ColorScheme.light(
-    primary: ColorConstants.primaryColor,
-    secondary: ColorConstants.secondaryColor,
-    surface: ColorConstants.surfaceColor,
-    onPrimary: ColorConstants.onPrimaryColor,
-    onSecondary: ColorConstants.onSecondaryColor,
-    onSurface: ColorConstants.onSurfaceColor,
+    primary: LightColorConstants.primaryColor,
+    secondary: LightColorConstants.secondaryColor,
+    surface: LightColorConstants.surfaceColor,
+    onPrimary: LightColorConstants.onPrimaryColor,
+    onSecondary: LightColorConstants.onSecondaryColor,
+    onSurface: LightColorConstants.onSurfaceColor,
+    secondaryContainer: LightColorConstants.backgroundColor,
   ),
   textTheme: GoogleFonts.latoTextTheme(),
-  // textTheme: TextTheme(
-  //   headlineMedium: GoogleFonts.lato(
-  //     fontWeight: FontWeight.bold,
-  //     color: ColorConstants.onSurfaceColor,
-  //   ),
-  //   headlineLarge: GoogleFonts.lato(
-  //     fontWeight: FontWeight.bold,
-  //     color: ColorConstants.onSurfaceColor,
-  //     fontSize: 20,
-  //   ),
-  //   bodyMedium: GoogleFonts.lato(
-  //     fontWeight: FontWeight.normal,
-  //     color: ColorConstants.onSurfaceColor,
-  //   ),
-  //   bodyLarge: GoogleFonts.lato(
-  //     fontWeight: FontWeight.normal,
-  //     color: ColorConstants.onSurfaceColor,
-  //   ),
-  //   labelMedium: GoogleFonts.roboto(
-  //     fontWeight: FontWeight.bold,
-  //     color: ColorConstants.onPrimaryColor,
-  //   ),
-  // ),
   appBarTheme: AppBarTheme(
-    backgroundColor: ColorConstants.primaryColor,
-    iconTheme: const IconThemeData(color: ColorConstants.onPrimaryColor),
+    backgroundColor: LightColorConstants.primaryColor,
+    iconTheme: const IconThemeData(color: LightColorConstants.onPrimaryColor),
     titleTextStyle: GoogleFonts.roboto(
       fontWeight: FontWeight.bold,
-      color: ColorConstants.onPrimaryColor,
+      color: LightColorConstants.onPrimaryColor,
       fontSize: 20,
     ),
   ),
   buttonTheme: ButtonThemeData(
-    buttonColor: ColorConstants.primaryColor,
+    buttonColor: LightColorConstants.primaryColor,
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
     textTheme: ButtonTextTheme.primary,
   ),
   elevatedButtonTheme: ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
-      backgroundColor: ColorConstants.primaryColor,
+      backgroundColor: LightColorConstants.primaryColor,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
     ),
   ),
   inputDecorationTheme: InputDecorationTheme(
     filled: true,
-    fillColor: ColorConstants.surfaceColor,
+    fillColor: LightColorConstants.surfaceColor,
     border: OutlineInputBorder(
       borderRadius: BorderRadius.circular(8),
-      borderSide: const BorderSide(color: ColorConstants.primaryColor),
+      borderSide: const BorderSide(color: LightColorConstants.primaryColor),
     ),
   ),
   bottomNavigationBarTheme: const BottomNavigationBarThemeData(
-    backgroundColor: ColorConstants.surfaceColor,
-    selectedItemColor: ColorConstants.primaryColor,
-    unselectedItemColor: ColorConstants.unselectedItemColor,
+    backgroundColor: LightColorConstants.surfaceColor,
+    selectedItemColor: LightColorConstants.primaryColor,
+    unselectedItemColor: LightColorConstants.unselectedItemColor,
   ),
   useMaterial3: true,
 );

@@ -3,7 +3,6 @@ import 'package:quickcart/screens/intro/splash_screen.dart';
 import 'package:quickcart/theme/dark_mode.dart';
 import 'package:quickcart/theme/light_mode.dart';
 
-
 void main() {
   runApp(const MyApp());
 }
@@ -15,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'QuickCart',
-      theme: lightTheme,
+      theme: lightMode,
       darkTheme: darkMode,
       debugShowCheckedModeBanner: false,
       home: const SplashScreen(),
