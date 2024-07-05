@@ -5,7 +5,11 @@ class ItemCard extends StatelessWidget {
   final Product product;
   final void Function() onTap;
 
-  const ItemCard({super.key, required this.product, required this.onTap});
+  const ItemCard({
+    super.key,
+    required this.product,
+    required this.onTap,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +20,7 @@ class ItemCard extends StatelessWidget {
           color: Theme.of(context).colorScheme.secondaryContainer,
           borderRadius: BorderRadius.circular(16),
           border: Border.all(
-            color: Colors.grey.withOpacity(0.5),
+            color: Colors.grey.withOpacity(0.3),
           ),
         ),
         child: Column(

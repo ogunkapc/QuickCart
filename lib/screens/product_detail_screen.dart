@@ -16,10 +16,9 @@ class ProductDetailScreen extends StatelessWidget {
         elevation: 0,
         title: Text(
           product.title,
-          // softWrap: true,
           style: const TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 20,
+            fontSize: 17,
           ),
         ),
         centerTitle: true,
@@ -28,7 +27,7 @@ class ProductDetailScreen extends StatelessWidget {
         child: Column(
           children: [
             Container(
-              height: size.height * 0.55,
+              height: size.height * 0.5,
               padding: const EdgeInsets.all(10),
               child: Hero(
                 tag: "${product.id}",
@@ -40,9 +39,8 @@ class ProductDetailScreen extends StatelessWidget {
               ),
             ),
             Container(
-              decoration: BoxDecoration(
-                color: Theme.of(context).colorScheme.secondaryContainer,
-                borderRadius: const BorderRadius.only(
+              decoration: const BoxDecoration(
+                borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(24),
                   topRight: Radius.circular(24),
                 ),
