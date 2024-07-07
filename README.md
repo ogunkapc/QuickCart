@@ -4,7 +4,7 @@ QuickCart is an e-commerce mobile application that displays products to users fr
 
 ## App Screenshots
 
-![Product list](screenshots/quickCart_product_list.png)  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![Product detail](screenshots/quickCart_product_detail.png)
+![Product list](screenshots/quickCart_product_list.png)  ![Product detail](screenshots/quickCart_product_detail.png)
 
 ## Features
 
